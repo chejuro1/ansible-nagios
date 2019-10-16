@@ -22,15 +22,15 @@
 
 - name: Install HTTPD and OpenSSL
   yum:
-    name:
+    name: 
       - httpd
       - httpd-tools
       - mod_ssl
       - openssl
       - openssl-libs
       - net-snmp-utils
-      - freeipmi
-      - OpenIPMI-modalias
+#      - freeipm
+#  - OpenIPMI-modalias
     state: present
   become: true
 
